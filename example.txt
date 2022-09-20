@@ -1,0 +1,45 @@
+#1: This shows Post object without owner information and Votes. The Post object has id, title, content, published, created_At, and user_id.
+{
+    "Post": {
+        "published": TRUE,
+        "title": "Interstellar (2014)",
+        "id": 5,
+        "user_id": 2,
+        "content": "A science-fiction masterpiece. Nolan executes a marvelous direction that slowly but efficiently puts in place a dark world creating a necessity to save humanity. Add to that great performances from Nolan and Hathaway plus a great score from Hans Zimmer. The result is on the best science-fiction movies of all time.",
+        "created_At": "2022-09-14T22:38:56.732573+05:00"
+        },
+    "votes": 0
+}
+
+#2: Post (instance of Post class in schemas.py) consists of id, title, content, published, created_At, and user_id. It has owner from user that consists of id, email, and created_At. 
+{
+    "title": "Top beaches in Florida",
+    "content": "Check out these awesome beaches",
+    "published": TRUE,
+    "id": 1,
+    "created_At": "2022-09-14T07:11:33.365621+05:00",
+    "user_id": 1,
+    "owner": {
+        "id": 1,
+        "email": "sumayyea@gmail.com",
+        "created_At": "2022-09-12T20:45:01.852307+05:00"
+    }
+}
+
+#3: This is the Post instance with owner details and Votes. It is from PostOut class in schemas.py. This is now obtained from the get() method of Post.py.
+{
+    "Post": {
+        "title": "Top beaches in Florida",
+        "content": "Check out these awesome beaches",
+        "published": true,
+        "id": 1,
+        "created_At": "2022-09-14T07:11:33.365621+05:00",
+        "user_id": 1,
+        "owner": {
+            "id": 1,
+            "email": "sumayyea@gmail.com",
+            "created_At": "2022-09-12T20:45:01.852307+05:00"
+        }
+    },
+    "votes": 2
+}

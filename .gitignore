@@ -1,0 +1,6 @@
+__pycache__
+final/
+venv/
+.env
+postsORM.sql
+usersORM.sql
