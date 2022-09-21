@@ -29,4 +29,4 @@ app.include_router(vote.router)
 
 @app.get("/")                                  
 def root():                                     
-    return {"message": "Python API v1.0!"}
+    return {"message": "Welcome to Python SocialMediaAPI v0.2.8-stable!"}
